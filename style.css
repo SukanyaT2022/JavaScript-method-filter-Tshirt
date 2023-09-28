@@ -1,0 +1,10 @@
+.bigContainer{
+width: 100%;
+}
+.smallBox{
+width: 20%;
+background-color: aqua;
+}
+.smallBox img{
+    width: 100%;
+}
