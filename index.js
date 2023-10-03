@@ -24,11 +24,11 @@ function data(){
     var newArray = arr.filter(filterPrice)
 console.log(fPrice)
 
+//emptyContainer() is clear or reset existing one
+emptyContainer()
     for(i=0;i<newArray.length; i++){
         //dynamic HTML create tag
         //for price
-
-            alert('hellooooo')
             var div = document.createElement('div')
             div.setAttribute('class','smallBox')
     
@@ -67,7 +67,7 @@ console.log(fPrice)
             divOne.appendChild(p6)
     
     div.appendChild(divOne)
-            document.body.appendChild(div)
+            document.getElementById('bigContainerID').appendChild(div)
     
             console.log(newArray[i].brand)
             console.log(newArray[i].price)
@@ -77,9 +77,6 @@ console.log(fPrice)
         }
     }
     
-
-
-
 
 //show by color
 var fcolor = " "//person enter the price 
@@ -92,6 +89,9 @@ function dataColor(){
     var newArray = arr.filter(filterColor)
 console.log(newArray)
 console.log(fcolor)
+
+//emptyContainer() is clear or reset existing one
+emptyContainer()
     for(i=0;i<newArray.length; i++){
         //dynamic HTML create tag
         //for price
@@ -104,8 +104,6 @@ console.log(fcolor)
 div.appendChild(img)
 var divOne = document.createElement('div')
 divOne.setAttribute('class','controlText')
-
-
         var p = document.createElement('p')
         var t1 = document.createTextNode('price' + newArray[i].price)
         p.appendChild(t1)
@@ -134,7 +132,7 @@ divOne.setAttribute('class','controlText')
         divOne.appendChild(p6)
 
 div.appendChild(divOne)
-        document.body.appendChild(div)
+document.getElementById('bigContainerID').appendChild(div)
 
         console.log(newArray[i].brand)
         console.log(newArray[i].price)
@@ -143,3 +141,85 @@ div.appendChild(divOne)
         console.log(newArray[i].color)
     }
 }
+
+
+//show by size
+var fsize = " "
+
+function filterSize(obj){
+    return obj.size==fsize
+    }
+
+    //function by nam edata
+function dataSize(){
+        fsize = (document.getElementById('filterSize').value)
+        var newArray = arr.filter(filterSize)
+    console.log(newArray)
+    console.log(fsize)
+//emptyContainer() is clear or reset existing one
+    emptyContainer()
+        for(i=0;i<newArray.length; i++){
+            //dynamic HTML create tag
+            //for price
+      
+            var div = document.createElement('div')
+            div.setAttribute('class','smallBox')
+      
+
+            var img = document.createElement('img')
+            img.setAttribute('src', newArray[i].image)
+    div.appendChild(img)
+
+    var divOne = document.createElement('div')
+    divOne.setAttribute('class','controlText')
+            var p = document.createElement('p')
+            var t1 = document.createTextNode('price' + newArray[i].price)
+            p.appendChild(t1) //appenchild put text inside div
+      divOne.appendChild(p)//appenchild we put inside div tag
+    
+    //brand
+            var p2 = document.createElement('p')
+            var t2 = document.createTextNode('brand' + newArray[i].brand)
+            p2.appendChild(t2)
+            divOne.appendChild(p2)
+    
+            //material size
+            var p3 = document.createElement('p')
+            var t3 = document.createTextNode('size' + newArray[i].size)
+            p3.appendChild(t3)
+            divOne.appendChild(p3)
+    //color
+            var p4 = document.createElement('p')
+            var t4 = document.createTextNode('color' + newArray[i].color)
+            p4.appendChild(t4)
+            divOne.appendChild(p4)
+    //material
+            var p6 = document.createElement('p')
+            var t6 = document.createTextNode('material' + newArray[i].material)
+            p6.appendChild(t6)
+            divOne.appendChild(p6)
+    
+    div.appendChild(divOne)
+    document.getElementById('bigContainerID').appendChild(div)
+    
+            console.log(newArray[i].brand)
+            console.log(newArray[i].price)
+            console.log(newArray[i].material)
+            console.log(newArray[i].size)
+            console.log(newArray[i].color)
+        }
+    }
+
+
+    //reset
+    function emptyContainer(){
+       var childNode = document.getElementById('bigContainerID').childNodes
+       //childNodes evertyhing in div tag
+     
+        for (i=0; i<childNode.length; i++){
+                document.getElementById('bigContainerID').removeChild(childNode[i])
+               } 
+       
+       
+    }
+
