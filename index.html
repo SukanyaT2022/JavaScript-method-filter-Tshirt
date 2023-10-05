@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://williamhume.com/wp-content/uploads/2015/11/cropped-W-Favicon.png" type="image/x-icon">
     <title>Document</title>
 </head>
 <body>
     <div class="mainBox">
-        <input type="text" placeholder="search"id='inputBox'/> 
+        <h2>T Shirt Shop</h2>
+        <div class="group">
+        <input type="text" placeholder="$"id='inputBox'/> 
         <button onclick="data()">Show by Price</button>
-        
+    </div>
         
         <!-- dropdown -->
+        <div class="group">
         <select name="" id="filterColor4dropdown">
             <option value="Pink">Pink</option>
             <option value="White">White</option>
@@ -20,7 +24,9 @@
             <option value="Black">Black</option>
         </select>
         <button onclick="dataColor()">Show by Color</button>
+    </div>
 
+    <div class="group">
         <select name="" id="filterSize">
             <option value="XS">XS</option>
             <option value="S">S</option>
@@ -29,8 +35,10 @@
             <option value="XL">XL</option>
         </select>
         <button onclick="dataSize()">Show by Size</button>
+    </div>
 
-        <button onclick="emptyContainer()">Reset</button>
+
+        <button class="resetButton" onclick="emptyContainer()">Reset</button>
         </div>
  <div class="bigContainer" id="bigContainerID">
 

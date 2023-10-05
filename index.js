@@ -9,10 +9,10 @@ this.material = material;
 this.color = color;
 this.image = image;
 }
-var shirtOne = new tShirt("GAPS",3, "S","cotton", "White", "https://images.unsplash.com/photo-1598554793905-075f7b355cd9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2hpdGUlMjBzaGlydHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" )// this is only one t shirt
-var shirtTwo = new tShirt("Gucci",100, "M","polyester", "Red" , "https://images.pexels.com/photos/10153595/pexels-photo-10153595.jpeg?auto=compress&cs=tinysrgb&w=800")
-var shirtThree = new tShirt("Zara",15, "L","blend", "Pink", "https://images.pexels.com/photos/15549906/pexels-photo-15549906/free-photo-of-woman-in-pink-shirt-at-the-seaside.jpeg?auto=compress&cs=tinysrgb&w=800" )
-var shirtFour = new tShirt("H&M",28, "XL","tri-blend", "Black","https://images.pexels.com/photos/18077752/pexels-photo-18077752/free-photo-of-young-woman-looking-over-the-shoulder.jpeg?auto=compress&cs=tinysrgb&w=800" )
+var shirtOne = new tShirt("  : GAPS ",3, "S","cotton", "White", "https://images.unsplash.com/photo-1598554793905-075f7b355cd9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2hpdGUlMjBzaGlydHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" )// this is only one t shirt
+var shirtTwo = new tShirt("  : Gucci ",100, "M","polyester", "Red" , "https://images.pexels.com/photos/10153595/pexels-photo-10153595.jpeg?auto=compress&cs=tinysrgb&w=800")
+var shirtThree = new tShirt(" : Zara ",15, "L","blend", "Pink", "https://images.pexels.com/photos/15549906/pexels-photo-15549906/free-photo-of-woman-in-pink-shirt-at-the-seaside.jpeg?auto=compress&cs=tinysrgb&w=800" )
+var shirtFour = new tShirt(" : H&M ",28, "XL","tri-blend", "Black","https://images.pexels.com/photos/18077752/pexels-photo-18077752/free-photo-of-young-woman-looking-over-the-shoulder.jpeg?auto=compress&cs=tinysrgb&w=800" )
 
 var arr = [shirtOne,shirtTwo,shirtThree,shirtFour]
 var fPrice = 0//person enter the price 
