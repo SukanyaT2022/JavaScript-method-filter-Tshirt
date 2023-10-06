@@ -42,7 +42,42 @@ var shirtFour = new tShirt(
   'https://images.pexels.com/photos/18077752/pexels-photo-18077752/free-photo-of-young-woman-looking-over-the-shoulder.jpeg?auto=compress&cs=tinysrgb&w=800'
 );
 
-var arr = [shirtOne, shirtTwo, shirtThree, shirtFour];
+//edition2
+
+var shirt5 = new tShirt(
+        'H&M',
+        14,
+        'XS',
+        'Cotton',
+        'White',
+        'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2hpdGUlMjBzaGlydCUyMHdvbWVufGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60'
+      ); // this is only one t shirt
+      var shirt6 = new tShirt(
+        'ColeHan',
+        20,
+        'M',
+        'polyester',
+        'Red',
+        'https://images.pexels.com/photos/2323909/pexels-photo-2323909.jpeg?auto=compress&cs=tinysrgb&w=800'
+      );
+      var shirt7 = new tShirt(
+        'Cat&Jack',
+        15,
+        'L',
+        'blend',
+        'Pink',
+        'https://images.unsplash.com/photo-1525326006910-384ca07920d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGluayUyMHQlMjBzaGlydHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60'
+      );
+      var shirt8 = new tShirt(
+        'kH',
+        28,
+        'XL',
+        'tri-blend',
+        'Black',
+        'https://images.unsplash.com/photo-1606115757624-6b9bfe9fa5e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGJsYWNrJTIwdCUyMHNoaXJ0fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60'
+      );
+
+var arr = [shirtOne, shirtTwo, shirtThree,shirtFour, shirt5, shirt6,shirt7, shirt8 ];
 var fPrice = 0; //person enter the price
 function filterPrice(obj) {
   return obj.price < fPrice;
