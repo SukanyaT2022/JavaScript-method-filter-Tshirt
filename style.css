@@ -1,71 +1,75 @@
-body{
-background-color: #F2F3F4;
+body {
+  background-color: #eae7dc;
 }
 
-.mainBox{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    
+.mainBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.bigContainer{
-width: 100%;
-margin-top: 100px;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-
+.bigContainer {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.smallBox{
-width: 20%;
-height: 500px;
-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-margin: 0px 10px  30px 10px;
-
+.smallBox {
+  width: 20%;
+  height: 500px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 0px 10px 30px 10px;
 }
-.smallBox p{
-    margin-left: 20px;
-
+.smallBox p {
+  margin-left: 20px;
 }
-.smallBox img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+.smallBox img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
-.controlText{
-    width: 100%;
-    height: 200px;
-    padding: 0px 30px 0px 30px;
-
+.controlText {
+  width: 100%;
+  height: 200px;
+  padding: 0px 30px 0px 30px;
 }
-.group{
-    display: flex;
-justify-content: space-between;
-align-items: flex-start;
-width: 25%;
-margin: 5px 0px;
+.group {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 25%;
+  margin: 5px 0px;
 }
 
-.group button{
-    border: none;
-    padding: 7px 7px;
-    margin-left: 5px;
-    width: 30%;
+.group button {
+  border: none;
+  padding: 7px 7px;
+  margin-left: 5px;
+  width: 30%;
+  background-color: #e98074;
 }
-.group input{
-    width: 60%; 
-    padding: 5px 5px;
+.group button:hover {
+  background-color: #d8c3a5;
 }
-
-.group select{
-    width: 64%;
-    padding: 5px 5px;
-}
-.resetButton{
-    width: 25%; 
-    padding: 5px 5px;  
-    margin-top: 20px;
+.group input {
+  width: 60%;
+  padding: 5px 5px;
 }
 
+.group select {
+  width: 64%;
+  padding: 5px 5px;
+}
+.resetButton {
+  width: 25%;
+  padding: 5px 5px;
+  margin-top: 20px;
+  background-color: #e85a4f;
+  border: none;
+}
+
+.resetButton:hover {
+  background-color: #d8c3a5;
+}
