@@ -22,7 +22,7 @@ body {
   height: 500px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin: 0px 10px 50px 10px;
-
+  background-color: white;
 }
 .smallBox p {
   margin-left: 20px;
@@ -74,4 +74,28 @@ body {
 
 .resetButton:hover {
   background-color: #d8c3a5;
+}
+/* ipad air */
+@media screen and (max-width:992px) {
+  .group {
+    width: 45%;
+  }
+  .group button {
+    width: 40%;
+  }
+  .smallBox {
+    width: 30%;
+    
+  }
+  
+}
+/*phone */
+@media screen and (max-width:600px) {
+  .group {
+    width: 80%;
+  }
+  .smallBox {
+    width: 80%;
+    
+  }
 }
